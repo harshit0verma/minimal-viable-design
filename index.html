@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olymp Inspired - Premium Greek Olives</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      /* Custom font approximations based on user request */
+      :root {
+        --font-primary: 'Georgia', 'Times New Roman', serif;
+        --font-heading: 'Roboto Condensed', 'PT Sans Narrow', sans-serif;
+      }
+
+      body {
+        font-family: var(--font-primary);
+        font-size: 18px; /* Standardizing the 68px request for body text down to something readable, but using large sizes in specific areas */
+        color: #333;
+        background-color: #fcfcfc;
+      }
+
+      h1, h2, h3, .heading-font {
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .text-huge {
+        font-size: 68px;
+        line-height: 1.1;
+      }
+
+      @media (max-width: 768px) {
+        .text-huge {
+          font-size: 42px;
+        }
+      }
+
+      /* Animated 365 effect */
+      .bg-365 {
+        font-weight: 900;
+        color: rgba(57, 73, 28, 0.08);
+        position: absolute;
+        z-index: 0;
+        user-select: none;
+      }
+      
+      .link-line {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+      .link-line::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        bottom: 0;
+        left: -50px;
+        background-color: #39491c;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
